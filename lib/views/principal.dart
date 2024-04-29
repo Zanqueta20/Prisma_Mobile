@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:prisma/views/login.dart';
 import 'package:prisma/views/carrinho.dart';
@@ -12,12 +10,6 @@ class Principal extends StatefulWidget {
 }
  
 class _PrincipalState extends State<Principal> {
-
-    void abrirCarrinho(){
-    Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context)=>Carrinho() ));
-  }
  
   @override
   Widget build(BuildContext context) {
@@ -26,17 +18,28 @@ class _PrincipalState extends State<Principal> {
      
       drawer: const hamburguer(),
 
+ /*
+      title: Column(children: [
+        Row(children: [
+          Icon(Icons.menu),
+          Text('First row'),
+          const Spacer(),
+          Icon(Icons.person),
+        ]),
+        TextFormField(),
+      ]),
+    );
+*/
+
       appBar: AppBar(
 
         toolbarHeight: 100,
         
         backgroundColor: Color(0xFF7D95FF),
+
+        title: Image.asset("img/logo.jpg"),  
  
         actions:[
-          
-        Image.asset("img/logo.jpg"),  
-
-        IconButton(icon: const Icon(Icons.shopping_basket), onPressed: abrirCarrinho, padding: EdgeInsets.only(bottom: 40),),
 
         IconButton(
           icon: const Icon(Icons.search),
@@ -48,13 +51,19 @@ class _PrincipalState extends State<Principal> {
       ],
     ),
 
-        body: Container(
-        padding: EdgeInsets.all(16),
-        child: Column(children: [
-          Image.asset("img/logo.jpg"),
-        ],),
-      ),
-    );
+      body:
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Align(
+            child: Image.asset("img/logo.jpg", height: 100, width: 100)
+          )
+        ]
+
+      )
+
+      );
   }
 }
 
@@ -91,9 +100,15 @@ Widget itemHamburguer(BuildContext context) => Container(
 
       ListTile(
         leading: const Icon(Icons.checklist_rounded),
-        title: Text("Categoria"),
+        title: Text("Categorias"),
         onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Login() ));},
       ),
+
+      ListTile(
+        leading: const Icon(Icons.shopping_cart),
+        title: Text("Carrinho"),
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Carrinho() ));},
+      ),  
 
       const Divider(color: Colors.black),
 
