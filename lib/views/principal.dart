@@ -14,8 +14,8 @@ class _PrincipalState extends State<Principal> {
  List a = [
   Image.asset("img/1.jpg"),
   Image.asset("img/2.jpg"),
-  Image.asset("img/3.jpg"),
-  Image.asset("img/4.png"),
+  Image.asset("img/3.png"),
+  Image.asset("img/4.jpg"),
  ];
 
   @override
@@ -47,7 +47,7 @@ class _PrincipalState extends State<Principal> {
 
       body: 
       ListView.builder(itemBuilder: (BuildContext ctx, int index){
-        return Image.asset(a[index]);
+        return a[index];
       }, itemCount: a.length,),
 
       );
@@ -82,19 +82,19 @@ Widget itemHamburguer(BuildContext context) => Container(
       ListTile(
         leading: const Icon(Icons.star),
         title: Text("Favoritos"),
-        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Login() ));},
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
       ),
 
       ListTile(
         leading: const Icon(Icons.checklist_rounded),
         title: Text("Categorias"),
-        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Login() ));},
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
       ),
 
       ListTile(
         leading: const Icon(Icons.shopping_cart),
         title: Text("Carrinho"),
-        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Carrinho() ));},
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
       ),  
 
       const Divider(color: Colors.black),
