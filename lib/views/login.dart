@@ -12,6 +12,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Color(0xFF7D95FF)),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
@@ -23,7 +24,7 @@ class _LoginState extends State<Login> {
             // Logo bala 
             Icon(
               Icons.lock
-              size: 100,
+              //size: 100, (arrumar depois)
             ), 
 
             const SizedBox(height: 25),

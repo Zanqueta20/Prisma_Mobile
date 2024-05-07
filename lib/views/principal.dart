@@ -11,25 +11,19 @@ class Principal extends StatefulWidget {
  
 class _PrincipalState extends State<Principal> {
  
+ List a = [
+  Image.asset("img/1.jpg"),
+  Image.asset("img/2.jpg"),
+  Image.asset("img/3.jpg"),
+  Image.asset("img/4.png"),
+ ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
      
       drawer: const hamburguer(),
-
- /*
-      title: Column(children: [
-        Row(children: [
-          Icon(Icons.menu),
-          Text('First row'),
-          const Spacer(),
-          Icon(Icons.person),
-        ]),
-        TextFormField(),
-      ]),
-    );
-*/
 
       appBar: AppBar(
 
@@ -51,17 +45,10 @@ class _PrincipalState extends State<Principal> {
       ],
     ),
 
-      body:
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          Align(
-            child: Image.asset("img/logo.jpg", height: 100, width: 100)
-          )
-        ]
-
-      )
+      body: 
+      ListView.builder(itemBuilder: (BuildContext ctx, int index){
+        return Image.asset(a[index]);
+      }, itemCount: a.length,),
 
       );
   }
