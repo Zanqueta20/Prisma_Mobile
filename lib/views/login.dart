@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(backgroundColor: Color(0xFF7D95FF)),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(209, 255, 253, 241),
         body: SafeArea(
           child: Center(
             child: Column(
@@ -25,17 +25,12 @@ class _LoginState extends State<Login> {
                 const SizedBox(height: 50),
 
                 // Logo bala
-                Icon(Icons.lock
-                    //size: 100, (arrumar depois)
-                    ),
-
-                const SizedBox(height: 25),
-
+                Image.asset("img/logo-branca.jpg"),
                 // Componente de Usuário
                 TextField(
                     decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
+                      borderSide: BorderSide(color: Color(0xFFFFFFFF))),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey.shade400)),
                   fillColor: Colors.grey.shade200,
@@ -56,6 +51,8 @@ class _LoginState extends State<Login> {
                         fillColor: Colors.grey.shade200,
                         filled: true,
                         hintText: "Senha do usuário")),
+
+                const SizedBox(height: 10),
 
                 //Esqueceu a senha paizão
                 Padding(
@@ -86,7 +83,7 @@ class _LoginState extends State<Login> {
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        ),
+                      ),
                     ),
                   ),
                 ),
