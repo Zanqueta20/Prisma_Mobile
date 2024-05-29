@@ -16,8 +16,20 @@ class _PrincipalState extends State<Principal> {
  List a = [
   Image.asset("img/1.jpg"),
   Image.asset("img/2.jpg"),
-  Image.asset("img/3.png"),
+  Image.asset("img/3.jpg"),
   Image.asset("img/4.jpg"),
+  Image.asset("img/5.jpg"),
+  Image.asset("img/6.jpg"),
+  Image.asset("img/7.jpg"),
+  Image.asset("img/8.jpg"),
+  //Image.asset("img/9.jpg"),
+  Image.asset("img/10.jpg"),
+  Image.asset("img/11.jpg"),
+  Image.asset("img/12.jpg"),
+  Image.asset("img/13.jpg"),
+  Image.asset("img/14.jpg"),
+  Image.asset("img/15.jpg"),
+  Image.asset("img/16.jpg"),
  ];
 
   @override
@@ -96,7 +108,7 @@ Widget itemHamburguer(BuildContext context) => Container(
       ListTile(
         leading: const Icon(Icons.shopping_cart),
         title: Text("Carrinho"),
-        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Carrinho() ));},
       ),  
 
       const Divider(color: Colors.black),
