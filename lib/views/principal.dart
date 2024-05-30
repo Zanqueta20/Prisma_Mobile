@@ -60,10 +60,12 @@ class _PrincipalState extends State<Principal> {
     ),
 
       body: 
-      ListView.builder(itemBuilder: (BuildContext ctx, int index){
+      ListView.builder(itemBuilder: (BuildContext ctx, int index)
+      {
         return a[index];
-      }, itemCount: a.length,),
-
+      }, 
+      itemCount: a.length),
+      
       );
   }
 }
