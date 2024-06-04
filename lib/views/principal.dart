@@ -10,8 +10,6 @@ class Principal extends StatefulWidget {
 }
  
 class _PrincipalState extends State<Principal> {
- 
-//teste
 
  List a = [
   Image.asset("img/1.jpg"),
@@ -22,7 +20,7 @@ class _PrincipalState extends State<Principal> {
   Image.asset("img/6.jpg"),
   Image.asset("img/7.jpg"),
   Image.asset("img/8.jpg"),
-  //Image.asset("img/9.jpg"),
+  Image.asset("img/9.jpg"),
   Image.asset("img/10.jpg"),
   Image.asset("img/11.jpg"),
   Image.asset("img/12.jpg"),
@@ -59,16 +57,37 @@ class _PrincipalState extends State<Principal> {
       ],
     ),
 
+      body:
+      Container(
+        height: 160,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: 8,
+          itemBuilder: (BuildContext ctx, int index)
+          {
+              return Padding(
+                padding: const EdgeInsets.all(10),
+                child: Container(
+                  child: Image.asset("img/4.jpg"),
+                ),
+              );
+          },
+        )
+      ),
+    
+      );
+  }
+}
+
+/*
       body: 
+      
       ListView.builder(itemBuilder: (BuildContext ctx, int index)
       {
         return a[index];
       }, 
       itemCount: a.length),
-      
-      );
-  }
-}
+*/
 
 class hamburguer extends StatelessWidget{
   const hamburguer({Key? key}) : super(key: key);
