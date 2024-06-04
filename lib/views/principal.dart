@@ -68,16 +68,24 @@ class _PrincipalState extends State<Principal> {
               return Padding(
                 padding: const EdgeInsets.all(10),
                 child: Container(
-                  child: Image.asset("img/4.jpg"),
-                ),
+                  child: Image.asset("img/4.jpg"),),
               );
           },
-        )
+        ),
       ),
-    
-      );
+    );
   }
 }
+
+/*class destaques extends State<Principal>{
+    
+    
+    @override
+    Widget build(BuildContext context) {
+
+    }
+   
+} */
 
 /*
       body: 
