@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:prisma/views/principal.dart';
+import 'package:prisma/views/carrinho.dart';
+import 'package:prisma/hamburguer.dart';
 
 class Login extends StatefulWidget {
   // final nomeController = TextEditingController();
@@ -15,8 +17,29 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(backgroundColor: Color(0xFF7D95FF)),
-        backgroundColor: Color.fromARGB(209, 255, 253, 241),
+      backgroundColor: Colors.white,
+     
+      drawer: const hamburguer(),
+
+      appBar: AppBar(
+
+        toolbarHeight: 100,
+        
+        backgroundColor: Color(0xFF7D95FF),
+
+        title: Image.asset("img/logo.jpg"),  
+ 
+        actions:[
+
+        IconButton(
+          icon: const Icon(Icons.search),
+          onPressed: (){
+            showSearch(context: context, delegate: MySearchDelegate(),
+            );
+          },
+        ),
+      ],
+    ),
         body: SafeArea(
           child: Center(
             child: Column(
