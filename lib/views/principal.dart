@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:prisma/views/login.dart';
 import 'package:prisma/views/carrinho.dart';
 import 'package:prisma/hamburguer.dart';
@@ -106,15 +107,17 @@ List destaques = [
   Image.asset("img/4.jpg"),
   Image.asset("img/5.jpg"),
   Image.asset("img/6.jpg"),
+  Image.asset("img/7.jpg"),
 ];
 
 List novidades = [
-  Image.asset("img/7.jpg"),
   Image.asset("img/8.jpg"),
   Image.asset("img/9.jpg"),
   Image.asset("img/10.jpg"),
   Image.asset("img/11.jpg"),
-  Image.asset("img/12.jpg")
+  Image.asset("img/12.jpg"),
+  Image.asset("img/13.jpg"),
+  Image.asset("img/14.jpg")
 ];
 
 //  List<Widget> listaDeImagens = [];
@@ -212,7 +215,7 @@ Widget mostrarnovidades()
 
      body: Column(
       children: [
-        Image.asset("img/default.jpg", width: 450),
+        Image.asset("img/banner.png", width: 450),
         Text("Destaques", textAlign: TextAlign.left),
         Expanded(child: mostrardestaques(),), 
         Text("Novidades"),
