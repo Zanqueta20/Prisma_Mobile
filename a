@@ -1,0 +1,89 @@
+[33mcommit 5ba5e149fce9a0fd0ebfe9ba5e430d1a56c4218b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Mon Jun 10 22:20:23 2024 -0300
+
+    Substituição do banner para o permanente
+
+[33mcommit a130dc08e67046159bd5fca30c05c943e77a361c[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Wed Jun 5 22:10:08 2024 -0300
+
+    Atualizando o front da aplicação e adicionando uma nova listview na pagina principal
+
+[33mcommit ba7d4751eff554affebc61142cf496534a170c17[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Tue Jun 4 20:27:21 2024 -0300
+
+    começando a criação da nova listview da página principal
+
+[33mcommit 1ffdf3769cd52c6470c2f6b368fd0832e8b62cca[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Tue Jun 4 19:55:02 2024 -0300
+
+    Criando a ListView horizontal
+
+[33mcommit fe83e476fc1d8f0cae61cff5c0b34c21ad509488[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Mon Jun 3 21:30:01 2024 -0300
+
+    Criando a listview horizontal
+
+[33mcommit 666fd518fcaf55dbdb517ef2e4f22932797345db[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Wed May 29 21:48:32 2024 -0300
+
+    Arrumando as imagens
+
+[33mcommit 43b04e7dbd6b03b5087f94b8051c08239c2e90c0[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Wed May 29 20:34:43 2024 -0300
+
+    Adicionando as imagens dos livros
+
+[33mcommit f92d58c08a7675365c4ff458bbc413f79c87d7fb[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Wed May 29 20:08:42 2024 -0300
+
+    Teste
+
+[33mcommit 47df57208462d8055b4e047b938ba4651a3a770e[m
+Author: victormlaker <victorhugomlaker9@gmail.com>
+Date:   Mon May 13 18:29:44 2024 -0300
+
+    Finalizando a tela de login
+
+[33mcommit df6620a3b527d74970ab50774624121722a38b8f[m
+Author: victormlaker <victorhugomlaker9@gmail.com>
+Date:   Sat May 11 22:15:26 2024 -0300
+
+    Terminando de estilizar os campos de nome de usuário e senha, como também a inserção do componente de esquecer a senha e do botão de Fazer login
+
+[33mcommit 269ec7ee4d9c1e0e0588ff3099492fb4749f070c[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Tue May 7 19:54:40 2024 -0300
+
+    Colocando imagens placeholders na lista de produtos
+
+[33mcommit 30d3acb5256bc89e267079e91c80e224547420ba[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Mon May 6 21:31:33 2024 -0300
+
+    Continuando o ListView de livros
+
+[33mcommit 18152a9b3ae38e0e8d52e7fc4066a6b76183cf6b[m
+Author: victormlaker <victorhugomlaker9@gmail.com>
+Date:   Sun May 5 22:14:42 2024 -0300
+
+    Construindo a tela e adicionando campos de usuário e senha
+
+[33mcommit f07ef0e7adb65612cfef5b656c61825f47810874[m
+Author: Zanqueta20 <matheuszanqueta20@gmail.com>
+Date:   Mon Apr 29 20:43:22 2024 -0300
+
+    Terminando a Appbar
+
+[33mcommit f82f2043ca631f2d9f7a96eb432ddd2d68b15338[m
+Author: Zanqueta <matheuszanqueta20@gmail.com>
+Date:   Tue Apr 23 21:45:01 2024 -0300
+
+    Criando o menu hamburguer e os icones funcionais do appbar
