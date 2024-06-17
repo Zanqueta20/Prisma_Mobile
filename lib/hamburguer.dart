@@ -29,6 +29,12 @@ Widget itemHamburguer(BuildContext context) => Container(
     runSpacing: 16,
     children: [
       ListTile(
+        leading: const Icon(Icons.home),
+        title: Text("Home"),
+        onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
+      ),
+
+      ListTile(
         leading: const Icon(Icons.star),
         title: Text("Favoritos"),
         onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Principal() ));},
